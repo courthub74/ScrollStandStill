@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    body {
+        .container {
+            background-color: rgb(147, 144, 144);
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 300vh;
+            .slide-in {
+                position: fixed;
+                height: 100vh;
+                width: 30%;
+                background-color: aliceblue;
+                color: rgb(10, 10, 163);
+                nav {  
+                    ul {
+                        padding: 20vh 0 0 10vw;
+                        li {
+                            margin: 5vh 0 0 0;
+                            font-size: 3vw;
+                            list-style: armenian;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            .bottom {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 40vw;
+                    padding: 10vh;
+                    // background-color: aquamarine;
+                    h1 {
+                        font-size: 5vw;
+                    }
+                    button {
+                        background-color: rgb(8, 8, 147);
+                        width: 5vw;
+                        height: 5vw;
+                        border: none;
+                        border-radius: 10px;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+                .body {
+                    width: 40%;
+                    font-weight: bold;
+                }
+                .body2 {
+                    width: 40%;
+                    font-weight: bold;
+                }
+                .body3 {
+                    width: 40%;
+                    font-weight: bold;
+                }
+                .body4 {
+                    width: 40%;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
