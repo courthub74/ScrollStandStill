@@ -10,19 +10,37 @@
             height: 300vh;
             .slide-in {
                 position: fixed;
+                top: 0;
+                left: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 height: 100vh;
                 width: 30%;
                 background-color: aliceblue;
                 color: rgb(10, 10, 163);
                 nav {  
                     ul {
-                        padding: 20vh 0 0 10vw;
                         li {
-                            margin: 5vh 0 0 0;
+                            margin: 3vh 0 0 0;
                             font-size: 3vw;
                             list-style: armenian;
                             font-weight: bold;
                         }
+                    }
+                }
+                .back {
+                    margin: 10vh 0 0 0;
+                    button {
+                        border: none;
+                        border-radius: 30px;
+                        width: 4vw;
+                        font-size: 1.5vw;
+                        font-weight: bold;
+                        background-color: aliceblue;
+                        color: rgb(10, 10, 163);
+                        cursor: pointer;
                     }
                 }
             }
@@ -34,7 +52,7 @@
                 .top {
                     display: flex;
                     justify-content: space-between;
-                    gap: 40vw;
+                    gap: 35vw;
                     padding: 10vh;
                     // background-color: aquamarine;
                     h1 {
@@ -51,19 +69,19 @@
                     }
                 }
                 .body {
-                    width: 40%;
+                    width: 70%;
                     font-weight: bold;
                 }
                 .body2 {
-                    width: 40%;
+                    width: 70%;
                     font-weight: bold;
                 }
                 .body3 {
-                    width: 40%;
+                    width: 70%;
                     font-weight: bold;
                 }
                 .body4 {
-                    width: 40%;
+                    width: 70%;
                     font-weight: bold;
                 }
             }

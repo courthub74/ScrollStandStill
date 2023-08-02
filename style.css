@@ -11,19 +11,35 @@
 }
 * body .container .slide-in {
   position: fixed;
+  top: 0;
+  left: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 30%;
   background-color: aliceblue;
   color: rgb(10, 10, 163);
 }
-* body .container .slide-in nav ul {
-  padding: 20vh 0 0 10vw;
-}
 * body .container .slide-in nav ul li {
-  margin: 5vh 0 0 0;
+  margin: 3vh 0 0 0;
   font-size: 3vw;
   list-style: armenian;
   font-weight: bold;
+}
+* body .container .slide-in .back {
+  margin: 10vh 0 0 0;
+}
+* body .container .slide-in .back button {
+  border: none;
+  border-radius: 30px;
+  width: 4vw;
+  font-size: 1.5vw;
+  font-weight: bold;
+  background-color: aliceblue;
+  color: rgb(10, 10, 163);
+  cursor: pointer;
 }
 * body .container .bottom {
   display: flex;
@@ -34,7 +50,7 @@
 * body .container .bottom .top {
   display: flex;
   justify-content: space-between;
-  gap: 40vw;
+  gap: 35vw;
   padding: 10vh;
 }
 * body .container .bottom .top h1 {
@@ -50,18 +66,18 @@
   cursor: pointer;
 }
 * body .container .bottom .body {
-  width: 40%;
+  width: 70%;
   font-weight: bold;
 }
 * body .container .bottom .body2 {
-  width: 40%;
+  width: 70%;
   font-weight: bold;
 }
 * body .container .bottom .body3 {
-  width: 40%;
+  width: 70%;
   font-weight: bold;
 }
 * body .container .bottom .body4 {
-  width: 40%;
+  width: 70%;
   font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
