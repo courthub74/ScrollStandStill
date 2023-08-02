@@ -1,8 +1,8 @@
 * {
     margin: 0;
-    scroll-behavior: smooth;
-    scroll-snap-type: mandatory;
     body {
+        scroll-behavior: smooth;
+        scroll-snap-type: mandatory;
         .container {
             background-color: rgb(147, 144, 144);
             color: black;
@@ -11,7 +11,7 @@
             .slide-in {
                 position: fixed;
                 top: 0;
-                left: 100%;
+                right: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -20,7 +20,8 @@
                 width: 30%;
                 background-color: aliceblue;
                 color: rgb(10, 10, 163);
-                nav {  
+                nav {
+                    transition: all ease-in .8s;  
                     ul {
                         li {
                             margin: 3vh 0 0 0;
@@ -44,11 +45,16 @@
                     }
                 }
             }
+            .slide-in.activate {
+                left: 0;
+                opacity: 1;
+            }
             .bottom {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                // opacity: .4;
                 .top {
                     display: flex;
                     justify-content: space-between;
@@ -85,6 +91,13 @@
                     font-weight: bold;
                 }
             }
+            .bottom.activate {
+                // opacity: .3;
+                background-color: rgb(31, 27, 27);
+            }
         }
+    }
+    body.activate {
+        overflow: hidden;
     }
 }

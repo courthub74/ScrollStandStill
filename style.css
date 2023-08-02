@@ -1,5 +1,7 @@
 * {
   margin: 0;
+}
+* body {
   scroll-behavior: smooth;
   scroll-snap-type: mandatory;
 }
@@ -12,7 +14,7 @@
 * body .container .slide-in {
   position: fixed;
   top: 0;
-  left: 100%;
+  right: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,6 +23,9 @@
   width: 30%;
   background-color: aliceblue;
   color: rgb(10, 10, 163);
+}
+* body .container .slide-in nav {
+  transition: all ease-in 0.8s;
 }
 * body .container .slide-in nav ul li {
   margin: 3vh 0 0 0;
@@ -40,6 +45,10 @@
   background-color: aliceblue;
   color: rgb(10, 10, 163);
   cursor: pointer;
+}
+* body .container .slide-in.activate {
+  left: 0;
+  opacity: 1;
 }
 * body .container .bottom {
   display: flex;
@@ -80,4 +89,10 @@
 * body .container .bottom .body4 {
   width: 70%;
   font-weight: bold;
+}
+* body .container .bottom.activate {
+  background-color: rgb(31, 27, 27);
+}
+* body.activate {
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
